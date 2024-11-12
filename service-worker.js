@@ -1,20 +1,21 @@
 const CACHE_NAME = 'v1';
 const cacheAssets = [
-    '/',
-    '/index.html',
-    '/style.css',
-    '/iconos/16x16.png',
-    '/iconos/32.png',
-    '/iconos/64.png',
-    '/iconos/96.png',
-    '/iconos/128.png',
-    '/iconos/144.png',
-    '/iconos/192.png',
-    '/iconos/256.png',
-    '/iconos/384.png',
-    '/iconos/512.png',
-    '/iconos/1024.png'
+    '/PWA_Imanolito/',
+    '/PWA_Imanolito/index.html',
+    '/PWA_Imanolito/style.css',
+    '/PWA_Imanolito/iconos/16x16.png',
+    '/PWA_Imanolito/iconos/32.png',
+    '/PWA_Imanolito/iconos/64.png',
+    '/PWA_Imanolito/iconos/96.png',
+    '/PWA_Imanolito/iconos/128.png',
+    '/PWA_Imanolito/iconos/144.png',
+    '/PWA_Imanolito/iconos/192.png',
+    '/PWA_Imanolito/iconos/256.png',
+    '/PWA_Imanolito/iconos/384.png',
+    '/PWA_Imanolito/iconos/512.png',
+    '/PWA_Imanolito/iconos/1024.png'
 ];
+
 
 // Evento de instalación
 self.addEventListener('install', (e) => {
