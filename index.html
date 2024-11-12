@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <!-- Optimizacion para el movil -->
+    <meta name="MobileOptimized" content="width"/>
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="mobile-web-app-capable" content="yes"/>
+
+    <!-- Optimizacion para el movil -->
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <link rel="apple-touch-icon" href="iconos/LogoPrincipal.png">
+    <link rel="apple-touch-startup-image" href="iconos/LogoPrincipal.png">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fernando Imanol Gaspar Silva - CV</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome para iconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- SweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <!-- Archivo de estilos CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Configuración General de PWA cargat el manifiesto-->
+    <link rel="manifest" href="/manifest.json">
+    <!-- Color Principal -->
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+<body>
+
+    <!-- Menú de navegación con Bootstrap e iconos -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><i class="fas fa-user-tie"></i> Mi CV</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#perfil"><i class="fas fa-user"></i> Perfil</a></li>
+                <li class="nav-item"><a class="nav-link" href="#formacion"><i class="fas fa-graduation-cap"></i> Formación</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experiencia"><i class="fas fa-briefcase"></i> Experiencia</a></li>
+                <li class="nav-item"><a class="nav-link" href="#habilidades"><i class="fas fa-code"></i> Habilidades</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacto"><i class="fas fa-envelope"></i> Contacto</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" onclick="showAlert()"><i class="fas fa-lightbulb"></i> Proyectos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Encabezado principal -->
+    <header class="text-center bg-dark text-white py-5">
+        <img src="Imagen.png" alt="Foto de Fernando Imanol Gaspar Silva" class="rounded-circle mb-4" style="width: 150px; height: 150px;">
+        <h1>Fernando Imanol Gaspar Silva</h1>
+        <h2>Desarrollador de Software</h2>
+    </header>
+
+    <!-- Secciones de contenido -->
+    <section id="perfil" class="container my-5">
+        <h3 class="text-muted"><i class="fas fa-user"></i> Perfil</h3>
+        <p>Técnico Superior Universitario en Desarrollo de Software, con un año desde la obtención del título y actualmente cursando el último cuatrimestre de Ingeniería en Tecnologías de la Información.</p>
+        <p>Experiencia en PHP, HTML, SQL, C#, junto con tecnologías como Firebase, Flutter, Python y SAP básico. Habilidades en soporte técnico a equipos de cómputo.</p>
+    </section>
+
+    <!-- Formación Académica -->
+    <section id="formacion" class="container my-5">
+        <h3 class="text-muted"><i class="fas fa-graduation-cap"></i> Formación</h3>
+        <ul class="list-unstyled">
+            <li><i class="fas fa-school"></i> Técnico en Programación, CETIS No. 86, 2016 - 2019</li>
+            <li><i class="fas fa-laptop-code"></i> Técnico Superior Universitario en Tecnologías de la Información, Desarrollo de Software, 2022 - 2023</li>
+            <li><i class="fas fa-university"></i> Ingeniería en Tecnologías de la Información, 2023 - Presente</li>
+        </ul>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="container my-5">
+        <h3 class="text-muted"><i class="fas fa-envelope"></i> Contacto</h3>
+        <ul class="list-unstyled">
+            <li><i class="fas fa-phone-alt"></i> Teléfono: 6143750778</li>
+            <li><i class="fas fa-envelope"></i> Email: a1120250019@utch.edu.mx</li>
+            <li><i class="fas fa-map-marker-alt"></i> Ubicación: Al sur de la ciudad.</li>
+        </ul>
+    </section>
+
+    <footer class="text-center bg-dark text-white py-4">
+        <p>&copy; 2024 Fernando Imanol Gaspar Silva</p>
+    </footer>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js')
+            .then(function(registration) {
+                console.log('Service Worker registrado con éxito:', registration.scope);
+            }).catch(function(error) {
+                console.log('Falló el registro del Service Worker:', error);
+            });
+        }
+
+        function showAlert() {
+            Swal.fire({
+                title: 'Proyectos',
+                text: 'PRÓXIMAMENTE',
+                icon: 'info',
+                confirmButtonText: 'Ok',
+                confirmButtonColor: '#343a40'
+            });
+        }
+    </script>
+
+    <!-- Bootstrap y jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
