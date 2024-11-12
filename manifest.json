@@ -1,73 +1,73 @@
 {
     "name": "Fernando Imanol CV",
     "short_name": "ImanolCV",
-    "start_url": "/index.html",
+    "start_url": "/PWA_Imanolito/index.html",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#333333",
     "icons": [
         {
-            "src": "/iconos/16x16.png",
+            "src": "/PWA_Imanolito/iconos/16x16.png",
             "sizes": "16x16",
             "type": "image/png",
             "purpose": "any"
         },
         {
-            "src": "/iconos/32.png",
+            "src": "/PWA_Imanolito/iconos/32.png",
             "sizes": "32x32",
             "type": "image/png",
             "purpose": "any"
         },
         {
-            "src": "/iconos/64.png",
+            "src": "/PWA_Imanolito/iconos/64.png",
             "sizes": "64x64",
             "type": "image/png",
             "purpose": "any"
         },
         {
-            "src": "/iconos/96.png",
+            "src": "/PWA_Imanolito/iconos/96.png",
             "sizes": "96x96",
             "type": "image/png",
             "purpose": "any"
         },
         {
-            "src": "/iconos/128.png",
+            "src": "/PWA_Imanolito/iconos/128.png",
             "sizes": "128x128",
             "type": "image/png",
             "purpose": "any"
         },
         {
-            "src": "/iconos/144.png",
+            "src": "/PWA_Imanolito/iconos/144.png",
             "sizes": "144x144",
             "type": "image/png",
             "purpose": "any"
         },
         {
-            "src": "/iconos/192.png",
+            "src": "/PWA_Imanolito/iconos/192.png",
             "sizes": "192x192",
             "type": "image/png",
             "purpose": "any"
         },
         {
-            "src": "/iconos/256.png",
+            "src": "/PWA_Imanolito/iconos/256.png",
             "sizes": "256x256",
             "type": "image/png",
             "purpose": "any"
         },
         {
-            "src": "/iconos/384.png",
+            "src": "/PWA_Imanolito/iconos/384.png",
             "sizes": "384x384",
             "type": "image/png",
             "purpose": "any"
         },
         {
-            "src": "/iconos/512.png",
+            "src": "/PWA_Imanolito/iconos/512.png",
             "sizes": "512x512",
             "type": "image/png",
             "purpose": "any"
         },
         {
-            "src": "/iconos/1024.png",
+            "src": "/PWA_Imanolito/iconos/1024.png",
             "sizes": "1024x1024",
             "type": "image/png",
             "purpose": "any"
@@ -75,13 +75,13 @@
     ],
     "screenshots": [
         {
-            "src": "/screenshots/screenshot-desktop.png",
+            "src": "/PWA_Imanolito/screenshots/screenshot-desktop.png",
             "sizes": "1280x720",
             "type": "image/png",
             "form_factor": "wide"
         },
         {
-            "src": "/screenshots/screenshot-mobile.png",
+            "src": "/PWA_Imanolito/screenshots/screenshot-mobile.png",
             "sizes": "720x1280",
             "type": "image/png",
             "form_factor": "narrow"
