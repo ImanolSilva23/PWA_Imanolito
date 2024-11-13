@@ -1,11 +1,11 @@
 const CACHE_NAME = 'v1';
 const cacheAssets = [
-    '/PWA_Imanolito/',
-    '/PWA_Imanolito/index.html',
-    '/PWA_Imanolito/style.css',
-    '/PWA_Imanolito/iconos/16x16.png',  // Solo los iconos que existen en tu repositorio
-    '/PWA_Imanolito/iconos/32.png',
-    '/PWA_Imanolito/iconos/64.png',
+    './',
+    '/index.html',
+    '/style.css',
+    '/iconos/16x16.png',  // Solo los iconos que existen en tu repositorio
+    'iconos/32.png',
+    '/iconos/64.png',
     // Agrega más iconos aquí solo si están disponibles
 ];
 
