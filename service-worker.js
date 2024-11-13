@@ -23,10 +23,14 @@ self.addEventListener('install', (e) => {
         caches.open(CACHE_NAME)
         .then(cache => {
             console.log('Archivos cacheados');
-            return cache.addAll(cacheAssets);
+            return Promise.all(
+                cacheAssets.map(asset => 
+                    cache.add(asset).catch(err => console.error(`Error al cachear ${asset}:`, err))
+                )
+            );
         })
         .then(() => self.skipWaiting())
-        .catch(error => console.error('Error al cachear archivos:', error))
+        .catch(error => console.error('Error al abrir el caché:', error))
     );
 });
 
@@ -53,6 +57,7 @@ self.addEventListener('fetch', (e) => {
     e.respondWith(
         caches.match(e.request)
         .then(response => response || fetch(e.request))
-        .catch(() => caches.match('/PWA_Imanolito/fallback.html')) // Opcionalmente, un archivo de fallback si lo necesitas
+        // Opcionalmente, puedes eliminar esta línea si no tienes un archivo fallback.html
+        .catch(() => caches.match('/PWA_Imanolito/fallback.html'))
     );
 });
