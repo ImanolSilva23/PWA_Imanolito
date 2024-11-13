@@ -3,15 +3,15 @@ const cacheAssets = [
     './',
     '/PWA_CV/index.html',
     '/PWA_CV/style.css',
-    '/PWA_CV/iconos/16x16.png',
-    '/PWA_CV/iconos/32.png',
-    '/PWA_CV/iconos/64.png',
-    '/PWA_CV/iconos/96.png',
-    '/PWA_CV/iconos/128.png',
-    '/PWA_CV/iconos/192.png',
-    '/PWA_CV/iconos/256.png',
-    '/PWA_CV/iconos/384.png',
-    '/PWA_CV/iconos/512.png'
+    '/PWA_CV/Iconos/16x16.png',
+    '/PWA_CV/Iconos/32.png',
+    '/PWA_CV/Iconos/64.png',
+    '/PWA_CV/Iconos/96.png',
+    '/PWA_CV/Iconos/128.png',
+    '/PWA_CV/Iconos/192.png',
+    '/PWA_CV/Iconos/256.png',
+    '/PWA_CV/Iconos/384.png',
+    '/PWA_CV/Iconos/512.png'
 ];
 
 // Evento de instalación
