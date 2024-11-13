@@ -1,19 +1,17 @@
 const CACHE_NAME = 'v1';
 const cacheAssets = [
-    './',
-    '/index.html',
-    '/style.css',
-    '/iconos/16x16.png', 
-    '/iconos/32.png',
-    '/iconos/64.png',
-    '/iconos/96.png',
-    '/iconos/128.png',
-    '/iconos/192.png',
-    '/iconos/256.png',
-    '/iconos/384.png',
-    '/iconos/512.png',
-    '/iconos/1024.png',
-    // Si no necesitas fallback.html, elimina la línea que lo usa más abajo
+    './',  // Raíz del sitio
+    '/PWA_Imanolito/index.html',
+    '/PWA_Imanolito/style.css',
+    '/PWA_Imanolito/iconos/16x16.png',
+    '/PWA_Imanolito/iconos/32.png',
+    '/PWA_Imanolito/iconos/64.png',
+    '/PWA_Imanolito/iconos/96.png',
+    '/PWA_Imanolito/iconos/128.png',
+    '/PWA_Imanolito/iconos/192.png',
+    '/PWA_Imanolito/iconos/256.png',
+    '/PWA_Imanolito/iconos/384.png',
+    '/PWA_Imanolito/iconos/512.png'
 ];
 
 // Evento de instalación
@@ -57,7 +55,6 @@ self.addEventListener('fetch', (e) => {
     e.respondWith(
         caches.match(e.request)
         .then(response => response || fetch(e.request))
-        // Si no tienes un archivo fallback, puedes eliminar esta línea
-        .catch(() => caches.match('/fallback.html'))
+        .catch(() => console.error('Error de red, archivo no encontrado'))
     );
 });
