@@ -1,17 +1,17 @@
 const CACHE_NAME = 'v1';
 const cacheAssets = [
-    './',  // Raíz del sitio
-    '/PWA_Imanolito/index.html',
-    '/PWA_Imanolito/style.css',
-    '/PWA_Imanolito/iconos/16x16.png',
-    '/PWA_Imanolito/iconos/32.png',
-    '/PWA_Imanolito/iconos/64.png',
-    '/PWA_Imanolito/iconos/96.png',
-    '/PWA_Imanolito/iconos/128.png',
-    '/PWA_Imanolito/iconos/192.png',
-    '/PWA_Imanolito/iconos/256.png',
-    '/PWA_Imanolito/iconos/384.png',
-    '/PWA_Imanolito/iconos/512.png'
+    './',
+    '/PWA_CV/index.html',
+    '/PWA_CV/style.css',
+    '/PWA_CV/iconos/16x16.png',
+    '/PWA_CV/iconos/32.png',
+    '/PWA_CV/iconos/64.png',
+    '/PWA_CV/iconos/96.png',
+    '/PWA_CV/iconos/128.png',
+    '/PWA_CV/iconos/192.png',
+    '/PWA_CV/iconos/256.png',
+    '/PWA_CV/iconos/384.png',
+    '/PWA_CV/iconos/512.png'
 ];
 
 // Evento de instalación
