@@ -1,53 +1,53 @@
 {
     "name": "Fernando Imanol CV",
     "short_name": "ImanolCV",
-    "start_url": "/PWA_CV/index.html",
+    "start_url": "/PWA_Imanolito/index.html",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#333333",
     "icons": [
         {
-            "src": "/PWA_CV/Iconos/16x16.png",
+            "src": "/PWA_Imanolito/Iconos/16x16.png",
             "sizes": "16x16",
             "type": "image/png"
         },
         {
-            "src": "/PWA_CV/Iconos/32.png",
+            "src": "/PWA_Imanolito/Iconos/32.png",
             "sizes": "32x32",
             "type": "image/png"
         },
         {
-            "src": "/PWA_CV/Iconos/64.png",
+            "src": "/PWA_Imanolito/Iconos/64.png",
             "sizes": "64x64",
             "type": "image/png"
         },
         {
-            "src": "/PWA_CV/Iconos/96.png",
+            "src": "/PWA_Imanolito/Iconos/96.png",
             "sizes": "96x96",
             "type": "image/png"
         },
         {
-            "src": "/PWA_CV/Iconos/128.png",
+            "src": "/PWA_Imanolito/Iconos/128.png",
             "sizes": "128x128",
             "type": "image/png"
         },
         {
-            "src": "/PWA_CV/Iconos/192.png",
+            "src": "/PWA_Imanolito/Iconos/192.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "/PWA_CV/Iconos/256.png",
+            "src": "/PWA_Imanolito/Iconos/256.png",
             "sizes": "256x256",
             "type": "image/png"
         },
         {
-            "src": "/PWA_CV/Iconos/384.png",
+            "src": "/PWA_Imanolito/Iconos/384.png",
             "sizes": "384x384",
             "type": "image/png"
         },
         {
-            "src": "/PWA_CV/Iconos/512.png",
+            "src": "/PWA_Imanolito/Iconos/512.png",
             "sizes": "512x512",
             "type": "image/png"
         }
