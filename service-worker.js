@@ -3,10 +3,17 @@ const cacheAssets = [
     './',
     '/index.html',
     '/style.css',
-    '/iconos/16x16.png',  // Solo los iconos que existen en tu repositorio
-    'iconos/32.png',
+    '/iconos/16x16.png', 
+    '/iconos/32.png',
     '/iconos/64.png',
-    // Agrega más iconos aquí solo si están disponibles
+    '/iconos/96.png',
+    '/iconos/128.png',
+    '/iconos/192.png',
+    '/iconos/256.png',
+    '/iconos/384.png',
+    '/iconos/512.png',
+    '/iconos/1024.png',
+    // Si no necesitas fallback.html, elimina la línea que lo usa más abajo
 ];
 
 // Evento de instalación
@@ -50,7 +57,7 @@ self.addEventListener('fetch', (e) => {
     e.respondWith(
         caches.match(e.request)
         .then(response => response || fetch(e.request))
-        // Opcional: Elimina esta línea si no tienes un archivo de fallback
-        .catch(() => caches.match('/PWA_Imanolito/fallback.html'))
+        // Si no tienes un archivo fallback, puedes eliminar esta línea
+        .catch(() => caches.match('/fallback.html'))
     );
 });
