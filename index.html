@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-
     <!-- Optimizacion para el movil -->
     <meta name="MobileOptimized" content="width"/>
     <meta name="HandheldFriendly" content="true"/>
     <meta name="mobile-web-app-capable" content="yes"/>
-
-    <!-- Optimizacion para el movil -->
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
-    <link rel="apple-touch-icon" href="iconos/LogoPrincipal.png">
-    <link rel="apple-touch-startup-image" href="iconos/LogoPrincipal.png">
+    <link rel="apple-touch-icon" href="/PWA_Imanolito/iconos/LogoPrincipal.png">
+    <link rel="apple-touch-startup-image" href="/PWA_Imanolito/iconos/LogoPrincipal.png">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fernando Imanol Gaspar Silva - CV</title>
+    
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome para iconos -->
@@ -23,13 +21,12 @@
     <!-- SweetAlert -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <!-- Archivo de estilos CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/PWA_Imanolito/style.css">
 
     <!--Configuración General de PWA cargat el manifiesto-->
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="/PWA_Imanolito/manifest.json">
     <!-- Color Principal -->
     <meta name="theme-color" content="#ffffff">
-
 </head>
 <body>
 
@@ -53,7 +50,7 @@
 
     <!-- Encabezado principal -->
     <header class="text-center bg-dark text-white py-5">
-        <img src="Imagen.png" alt="Foto de Fernando Imanol Gaspar Silva" class="rounded-circle mb-4" style="width: 150px; height: 150px;">
+        <img src="/PWA_Imanolito/Imagen.png" alt="Foto de Fernando Imanol Gaspar Silva" class="rounded-circle mb-4" style="width: 150px; height: 150px;">
         <h1>Fernando Imanol Gaspar Silva</h1>
         <h2>Desarrollador de Software</h2>
     </header>
@@ -91,7 +88,7 @@
 
     <script>
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/service-worker.js')
+            navigator.serviceWorker.register('/PWA_Imanolito/service-worker.js')
             .then(function(registration) {
                 console.log('Service Worker registrado con éxito:', registration.scope);
             }).catch(function(error) {

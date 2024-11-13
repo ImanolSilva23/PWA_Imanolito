@@ -16,7 +16,6 @@ const cacheAssets = [
     '/PWA_Imanolito/iconos/1024.png'
 ];
 
-
 // Evento de instalación
 self.addEventListener('install', (e) => {
     console.log('Service Worker: Instalación');
@@ -54,6 +53,6 @@ self.addEventListener('fetch', (e) => {
     e.respondWith(
         caches.match(e.request)
         .then(response => response || fetch(e.request))
-        .catch(() => caches.match('/fallback.html')) // Opcionalmente, un archivo de fallback si lo necesitas
+        .catch(() => caches.match('/PWA_Imanolito/fallback.html')) // Opcionalmente, un archivo de fallback si lo necesitas
     );
 });
